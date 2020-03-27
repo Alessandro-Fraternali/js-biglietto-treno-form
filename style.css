@@ -15,6 +15,7 @@ body {
   width: 80%;
   background-color: cyan;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .listatitoli {
@@ -41,11 +42,15 @@ body {
   align-items: center;
 }
 
-.blu {
-  background-color: blue;
+.ciao {
+  background-color: orange;
   height: 30px;
   width: 200px;
   border:1px solid black;
+}
+
+.listabottoni .ciao {
+  margin-left: 20px;
 }
 
 /* parte a comparsa */
@@ -55,25 +60,34 @@ body {
   background-color: blue;
 }
 
+.secondo h3 {
+  margin-left: 16px;
+}
+
 .biglietto {
   display: flex;
   justify-content: center;
   background-color: red;
+  text-align: center;
+}
+
+.biglietto h3 {
+  margin:0;
+  margin-top: 10px;
 }
 
 .elgrigio {
   background-color: gray;
-  width: 200px;
+  width: 220px;
   height: 100px;
 }
 
 .tabella {
   height: 100px;
   background-color: orange;
-  width: 80%;
+  width: 77%;
 }
 
 table th,table  td {
   padding-left: 30px;
-  text-align: center;
 }
