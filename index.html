@@ -7,7 +7,10 @@
   </head>
   <body>
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+    <!-- Blocco principale  -->
     <div class="primo">
+      <!-- lista dei titoli -->
       <div class="listatitoli">
         <div class="ciao">
           Nome e Cognome
@@ -19,7 +22,7 @@
           Fascia d'età
         </div>
       </div>
-
+      <!-- lista degli input per nome, tragitto e età -->
       <div class="listaform">
         <div class="ciao">
           <input id="nome" type="text" name="" value="">
@@ -27,11 +30,13 @@
         <div class="ciao">
           <input id="km" type="text" name="" value="">
         </div>
-        <div class="ciao">
-          <input id="eta" type="text" name="" value="">
-        </div>
+        <select id="eta" name="">
+          <option value="minorenne">Minorenne</option>
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="over65">Over 65</option>
+        </select>
       </div>
-
+      <!-- bottoni -->
       <div class="listabottoni">
         <div class="ciao">
           <a id="genera" href="#">Genera</a>
@@ -41,14 +46,18 @@
         </div>
       </div>
     </div>
+
+    <!-- parte invisibile che appare solo dopo aver cliccato GENERA -->
     <h2>IL TUO BIGLIETTO</h2>
     <div class="secondo">
       <h3>Dettagli passeggero</h3>
       <div class="biglietto">
+        <!-- quadrato grigio con nome passeggero -->
         <div class="elgrigio">
           <h3>NOME PASSEGGERO:</h3>
-          <p id="nomepasseggero"></p>
+          <h3 id="nomepasseggero"></h3>
         </div>
+        <!-- tabella coi dati del biglietto -->
         <div class="tabella">
           <table>
             <tr>
@@ -58,13 +67,14 @@
               <th>Costo biglietto</th>
             </tr>
             <tr>
-              <td id="biglietto"></td>
-              <td>6</td>
-              <td>93805</td>
+              <td id="offerta"></td>
+              <td id="carrozza"></td>
+              <td id="codice"></td>
               <td id="prezzo"></td>
             </tr>
           </table>
-
+          <img id="pory" src="lp.gif" alt="">
+          <!-- tag script per JS -->
           <script src="main.js" charset="utf-8"></script>
         </div>
       </div>
