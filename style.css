@@ -1,3 +1,4 @@
+/* regole generali */
 *{
   box-sizing: border-box;
   padding:0;
@@ -11,6 +12,7 @@ body {
   flex-direction: column;
 }
 
+/* regole primo blocco */
 .primo {
   width: 80%;
   background-color: cyan;
@@ -53,17 +55,18 @@ body {
   margin-left: 20px;
 }
 
-/* parte a comparsa */
-.secondo {
+/* regole del secondo blocco (parte a comparsa) */
+#secondo {
   height: 150px;
   width: 80%;
   background-color: blue;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  opacity: 0;
 }
 
-.secondo h3 {
+#secondo h3 {
   margin-left: 16px;
 }
 

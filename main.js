@@ -30,6 +30,7 @@ generabiglietto.addEventListener("click",
     valkm = kmU.value;
     valeta = etaU.value;
     costoAlKm = valkm * 0.21;
+    document.getElementById("secondo").style.opacity = "1";
     // randomizzazione della carrozza
     document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 100) + 1;
     // randomizzazione del codice CP
