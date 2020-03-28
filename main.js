@@ -16,6 +16,11 @@ var valkm;
 var valeta;
 var prezzo;
 var costoAlKm;
+var oreminuti;
+var giorno;
+var mese;
+var anno;
+var d = new Date();
 
 // cosa succede quando l'utente clicca "conferma"
 generabiglietto.addEventListener("click",
@@ -25,6 +30,12 @@ generabiglietto.addEventListener("click",
     valkm = kmU.value;
     valeta = etaU.value;
     costoAlKm = valkm * 0.21;
+    // randomizzazione della carrozza
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 100) + 1;
+    // randomizzazione del codice CP
+    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 9999) + 807;
+    // stampa della data
+    document.getElementById("data").innerHTML = "Stampato il giorno  " + d.getDay() +" / "+ d.getMonth() + " / " + d.getFullYear();
     // stampa del nome del passeggero
     document.getElementById("nomepasseggero").innerHTML = valnome;
     // tipo e costo del biglietto basati sulle variabili valeta e valkm
