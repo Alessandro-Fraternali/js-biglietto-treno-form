@@ -63,7 +63,7 @@ annulla.addEventListener("click",
     // azzeramento dei campi
     nomeU.value = "";
     kmU.value = "";
-    etaU.value = "";
+    etaU.value = "minorenne";
     valkm = "";
     //  rimozione del biglietto
     document.getElementById("secondo").style.opacity = "0";
