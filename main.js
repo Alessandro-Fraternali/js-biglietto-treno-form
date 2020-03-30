@@ -36,7 +36,7 @@ generabiglietto.addEventListener("click",
     // randomizzazione del codice CP
     document.getElementById("codice").innerHTML = Math.floor(Math.random() * 9999) + 807;
     // stampa della data
-    document.getElementById("data").innerHTML = "Stampato il giorno  " + d.getDay() +" / "+ d.getMonth() + " / " + d.getFullYear();
+    document.getElementById("data").innerHTML = "Stampato il giorno  " + d.getDay() +"/"+ d.getMonth() + "/" + d.getFullYear();
     // stampa del nome del passeggero
     document.getElementById("nomepasseggero").innerHTML = valnome;
     // tipo e costo del biglietto basati sulle variabili valeta e valkm
@@ -58,3 +58,14 @@ generabiglietto.addEventListener("click",
   }
 );
 // cosa succede quando l'utente clicca "annulla"
+annulla.addEventListener("click",
+  function () {
+    // azzeramento dei campi
+    nomeU.value = "";
+    kmU.value = "";
+    etaU.value = "";
+    valkm = "";
+    //  rimozione del biglietto
+    document.getElementById("secondo").style.opacity = "0";
+  }
+);

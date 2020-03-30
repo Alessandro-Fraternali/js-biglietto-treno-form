@@ -10,45 +10,54 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #cccccc;
+}
+
+a {
+  text-decoration: none;
+  padding: 7px 20px;
+  background-color: #ffff99;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /* regole primo blocco */
 .primo {
   width: 80%;
-  background-color: cyan;
+  background-color: #e6e6ff;
   margin-bottom: 50px;
   text-align: center;
 }
 
 .listatitoli {
-  background-color: green;
+  width: 60%;
+  margin: auto;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .listaform {
-  background-color: red;
+  width: 60%;
+  margin: auto;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .listabottoni {
-  background-color: yellow;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.ciao {
-  background-color: orange;
-  height: 30px;
-  width: 200px;
-  border:1px solid black;
 }
 
 .listabottoni .ciao {
@@ -59,7 +68,7 @@ body {
 #secondo {
   height: 150px;
   width: 80%;
-  background-color: blue;
+  background-color: #e6e6ff;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -69,12 +78,20 @@ body {
 #secondo h3 {
   margin-left: 16px;
 }
+#secondo h4 {
+  margin-right: 16px;
+}
+
+.infosuperiori {
+  display: flex;
+  justify-content: space-between;
+}
 
 .biglietto {
   display: flex;
   justify-content: center;
-  background-color: red;
   text-align: center;
+  margin-top: 10px;
 }
 
 .biglietto h3 {
@@ -86,16 +103,17 @@ body {
   background-color: gray;
   width: 220px;
   height: 100px;
+  text-align: left;
 }
 
 .tabella {
   height: 100px;
-  background-color: orange;
   width: 77%;
+  border: 1px solid gray;
 }
 
 table th,table  td {
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 #pory {
